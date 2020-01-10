@@ -1,0 +1,80 @@
+<html>
+<head>
+<script>
+
+function add() {
+
+var a=document.getElementById("v1").value;
+var b=document.getElementById("v2").value;
+var c = Number(a) + Number(b);
+document.getElementById("result").value=c;
+
+alert("The sum is "+c);
+}
+
+function sub() {
+
+var a=document.getElementById("v1").value;
+var b=document.getElementById("v2").value;
+var c = a-b;
+document.getElementById("result").value=c;
+alert("The value is "+c);
+}
+
+function div() {
+
+var a=document.getElementById("v1").value;
+var b=document.getElementById("v2").value;
+var c = a/b;
+document.getElementById("result").value=c;
+alert("The result is "+c);
+}
+
+function multi() {
+
+var a=document.getElementById("v1").value;
+var b=document.getElementById("v2").value;
+var c = a*b;
+document.getElementById("result").value=c;
+alert("The product is "+c);
+}
+
+function modu() {
+
+var a=document.getElementById("v1").value;
+var b=document.getElementById("v2").value;
+var c = a%b;
+document.getElementById("result").value=c;
+alert("The remainder is "+c);
+}
+
+
+</script>
+
+<title> Calculator </title>
+
+<center>
+<b><h1> Calculator </h3></b>
+<h3> Value 1: </h3>
+<input id="v1" type="text" value="  ">
+</br>
+<h3> Value 2: </h3>
+<input id="v2" type="text" value="  ">
+</br>
+</br>
+<input type="button" value="Add" onclick="add();">
+<input type="button" value="Subtract" onclick="sub();">
+<input type="button" value="Divide" onclick="div();">
+<input type="button" value="Modulus" onclick="modu();">
+<input type="button" value="Multiply" onclick="multi();">
+
+</br>
+</br>
+</br>
+Result:
+<input type=text id="result">
+
+</center>
+
+</body>
+</html>
